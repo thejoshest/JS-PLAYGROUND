@@ -1,3 +1,17 @@
-var el = document.getElementById('main');
+function baz() {
+    console.log( "baz" );
+    bar();
+}
 
-el.innerHTML = "Can't get enough"
+function bar() {
+    console.log( "bar" );
+    foo();
+}
+
+function foo() {
+    console.log( "foo" );
+    var el = document.getElementById('main');
+    el.innerHTML = "Can't get enough";
+}
+
+baz();
