@@ -17,7 +17,7 @@ Object.defineProperty(favorites, Symbol.iterator, {
     enumerable:false,
     writable:false,
     configurable:true,
-    value: funtion(){
+    value: function(){
         var o = this,
           idx = 0,
            ks = Object.keys(0);
